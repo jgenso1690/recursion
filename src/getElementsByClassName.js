@@ -11,8 +11,8 @@ var getElementsByClassName = function(className
 	var list = element.classList
 	
 
-	console.log(doc)
+
 	console.log(ele)
-	console.log(list)
+	//console.log(list)
   // your code here
 };
