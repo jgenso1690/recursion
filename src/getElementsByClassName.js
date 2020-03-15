@@ -6,7 +6,7 @@
 // But instead we're going to implement it from scratch:
 var getElementsByClassName = function(className
 ) {
-	var doc = document.className;
+	var doc = document.element[className];
 	var allclassName = [];
 
 	console.log(doc)
