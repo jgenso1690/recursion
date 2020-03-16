@@ -8,10 +8,7 @@ var getElementsByClassName = function(className
 ) {
 	var result = [] 
 	
-	if ( element.childNodes.className === null){
-		return result;
-	}
-
+	
 	element.childNodes.forEach(function(element){
 		if (element.className === className){
 			result.push(element);
