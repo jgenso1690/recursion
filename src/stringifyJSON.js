@@ -51,7 +51,7 @@ var stringifyJSON = function(obj) {
 			var value = stringifyJSON(obj[key])
 		
 		if ( string !== null) {
-			string.push('"'+key+'":' + val)
+			string.push('"'+key+'":' + value)
 		}
 
 	})
