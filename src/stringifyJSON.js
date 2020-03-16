@@ -6,27 +6,27 @@
 var stringifyJSON = function(obj) {
   // your code goes here
  
-	if (type(obj) === "Null") {
+	if (type of obj === "Null") {
       return null;
     }
-	if (type(obj) === "Undefined") {
+	if (type of obj === "Undefined") {
       return null;
     }
-	if (type(obj) === "String"){
+	if (type of obj=== "String"){
 	  return '"'+obj+'"';
     }
 
-	if (typo(obj) === "Number") {
+	if (type of obj=== "Number") {
 	  return obj;
     }
 
-    if (type(obj) === "Array"){
+    if (Array.isArray(obj) === "Array"){
 	  return '['+obj.map(function(el){
 		return stringify(el)
 	  }).join(",") + ']'
     }
 
-	if (type(obj) === "Object"){
+	if (type of obj === "Object"){
 		var string = []
 		Object.keys(obj).forEach(function(key) {
 			var value = stringify(obj[key])
