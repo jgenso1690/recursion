@@ -31,7 +31,7 @@ var stringifyJSON = function(obj) {
 	  return obj.toString();
     }
 
-    if (Array.isArray(obj) === "array"){
+    if (Array.isArray(obj)){
 	  return '['+obj.map(function(el){
 		return JSONstringify(el)
 	  }).join(",") + ']'
