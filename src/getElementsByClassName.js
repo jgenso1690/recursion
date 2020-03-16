@@ -12,7 +12,7 @@ var getElementsByClassName = function(className
 		return result;
 	}
 
-	var exist function(element){
+	var exist = function(element){
 		if (element.classList && classList.includes(className)){
 			result.push(element);
 		};
