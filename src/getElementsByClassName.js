@@ -8,9 +8,7 @@ var getElementsByClassName = function(className
 ) {
 	var result = [] 
 	
-	if ( element.childNodes.className === null){
-		return result;
-	}
+	
 
 	var exist = function(element){
 		if (element.classList && classList.includes(className)){
