@@ -35,9 +35,12 @@ var stringifyJSON = function(obj) {
 	  var string = "[";
 
 	  for (var i = 0; i<obj.length; i++){
-	  	var current = obj[i];
-	  	current = stringifyJSON(current)
-	  	string+= current;
+	  	
+	  	if ( i > 1){
+	  		string+= stringifyJSON(current)+", ";
+	  	}else{
+	  		string+= stringifyJSON(current);
+	  	}
 	  }
 	  return string + "]";
     }
