@@ -8,11 +8,41 @@ var getElementsByClassName = function(className
 ) {
 	
 	
-	var jdd =document.body.classList
-	var vytfy = document.body.childNodes
+  var arr = [];
+  var body = document.body;
+  var parent = body;
+  // console.log('current: ' )
+  if (parent.classList.contains(className)) {
+    arr.push(parent);
+  }
+  function loop(parent) {
 
+    if (!arr.includes(parent) && parent.classList.contains(className)) {
+      arr.push(parent);
+    }
 
-	console.log(ele)
-	//console.log(list)
+    var children = Array.from(parent.childNodes).filter(item => item.nodeType != Node.TEXT_NODE);
+
+    if (children.length !== 0 || children !== undefined) {
+      for (let i = 0; i < children.length; i ++) {
+
+        if (children[i].classList.contains(className)) {
+          arr.push(children[i]);
+        }
+
+        var grandchildren = Array.from(children[i].childNodes).filter(item => item.nodeType != Node.TEXT_NODE);
+        if (grandchildren.length !== 0 && grandchildren !== undefined) {
+          for (let j = 0; j < grandchildren.length; j ++) {
+            loop(grandchildren[j]);
+          }
+        }
+      }
+
+    }
+
+  }
+  loop(body);
+  return arr;
+}
   // your code here
-};
+
