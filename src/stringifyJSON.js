@@ -12,7 +12,7 @@ var stringifyJSON = function(obj) {
       return "null";
     }
 	if (typeof obj === "undefined") {
-      return null.toString();
+      return "null";
     }
 
     if (obj === true){
