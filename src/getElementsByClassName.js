@@ -6,13 +6,48 @@
 // But instead we're going to implement it from scratch:
 var getElementsByClassName = function(className
 ) {
-	
-	
-	var jdd =document.body.classList
-	var vytfy = document.body.childNodes
+	result = [] 
 
+	if (Element.className === null){
+		return result;
+	}
 
-	console.log(ele)
+	Element.children.each{
+		if (Element.children.className === className){
+			result.push(Element.children);
+		};
+		getElementsByClassName(Element.children);
+	}	
+
+}
+	/*if. el === null
+		el.Nodechildren.each {
+		if el.child.className == className {
+			result << el.child
+			
+		}
+		getElementsByClassName(el.child)
+	}
+
+		end 
+		
 	//console.log(list)
   // your code here
 };
+
+
+2
+<body className = '1'>
+	<h1 className = '2'>
+		<p className = '1'>"lslads" </p>
+	</h1>
+	h2
+<body>
+
+
+body.childNodes
+element.childNodes
+element.children -> property of an element
+
+document.childNodes.length -> how many childnodes theres are
+*/
