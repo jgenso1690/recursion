@@ -5,28 +5,28 @@
 
 var stringifyJSON = function(obj) {
   // your code goes here
- 
-	if (typeof obj === "Null") {
+ console.log(typeof obj)
+	if (typeof obj === "null") {
       return null;
     }
-	if (typeof obj === "Undefined") {
+	if (typeof obj === "undefined") {
       return null;
     }
-	if (typeof obj=== "String"){
+	if (typeof obj === "string"){
 	  return '"'+obj+'"';
     }
 
-	if (typeof obj=== "Number") {
+	if (typeof obj === "number") {
 	  return obj;
     }
 
-    if (Array.isArray(obj) === "Array"){
+    if (Array.isArray(obj) === "array"){
 	  return '['+obj.map(function(el){
-		return stringify(el)
+		return JSONstringify(el)
 	  }).join(",") + ']'
     }
 
-	if (typeof obj === "Object"){
+	if (typeof obj === "object"){
 		var string = []
 		Object.keys(obj).forEach(function(key) {
 			var value = stringifyJSON(obj[key])
