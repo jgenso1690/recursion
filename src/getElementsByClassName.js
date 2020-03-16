@@ -6,14 +6,14 @@
 // But instead we're going to implement it from scratch:
 var getElementsByClassName = function(className
 ) {
-	result = [] 
+	var result = [] 
 	
-	/*if ( element === null){
+	if ( element.className === null){
 		return result;
-	}*/
+	}
 
 	element.childNodes.forEach(function(element){
-		if (element === className){
+		if (element.className === className){
 			result.push(element);
 		};
 		getElementsByClassName(element);
