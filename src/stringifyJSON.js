@@ -6,12 +6,23 @@
 var stringifyJSON = function(obj) {
   // your code goes here
  console.log(typeof obj)
+
+
 	if (obj=== null) {
       return "null";
     }
 	if (typeof obj === "undefined") {
       return null.toString();
     }
+
+    if (obj === true){
+    	return "true";
+    }
+
+    if (obj === false){
+    	return "false";
+    }
+
 	if (typeof obj === "string"){
 	  return '"'+obj+'"';
     }
