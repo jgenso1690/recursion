@@ -9,7 +9,7 @@ var getElementsByClassName = function(className
 	
 	
 	var jdd =document.body.classList
-	
+	var vytfy = document.body.childNodes
 
 
 	console.log(ele)
