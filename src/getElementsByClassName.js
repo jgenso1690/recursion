@@ -8,7 +8,7 @@ var getElementsByClassName = function(className
 ) {
 	
 	
-	var jdd = body.document.classList
+	var jdd =document.body.classList
 	
 
 
