@@ -7,8 +7,8 @@
 var getElementsByClassName = function(className
 ) {
 	result = [] 
-
-	if (Element.className === null){
+	var body = 
+	if (element.className === null){
 		return result;
 	}
 
