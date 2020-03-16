@@ -7,16 +7,17 @@
 var getElementsByClassName = function(className
 ) {
 	result = [] 
+	var element = document.body
 
-	if (Element.className === null){
+	if (element.className === null){
 		return result;
 	}
 
-	Element.children.each{
-		if (Element.children.className === className){
-			result.push(Element.children);
+	element.children.each{
+		if (element.children.className === className){
+			result.push(element.children);
 		};
-		getElementsByClassName(Element.children);
+		getElementsByClassName(element.children);
 	}	
 return result
 }
