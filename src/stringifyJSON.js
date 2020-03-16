@@ -51,6 +51,7 @@ var stringifyJSON = function(obj) {
 		Object.keys(obj).forEach(function(key) {
 if (key === "functions"){
 	return {};
+	break;
 }
 			var value = stringifyJSON(obj[key])
 		
