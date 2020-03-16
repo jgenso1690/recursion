@@ -7,12 +7,12 @@
 var getElementsByClassName = function(className
 ) {
 	result = [] 
-	var elementclasses = elementNodeReference.classList;
-	if ( elementclasses === null){
+	
+	/*if ( element === null){
 		return result;
-	}
+	}*/
 
-	Element.children.forEach(function(element){
+	element.childNodes.forEach(function(element){
 		if (element === className){
 			result.push(element);
 		};
