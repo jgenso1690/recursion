@@ -32,9 +32,12 @@ var stringifyJSON = function(obj) {
     }
 
     if (Array.isArray(obj)){
-	  return '['+obj.map(function(el){
-		return JSONstringify(el)
-	  }).join(",") + ']'
+	  var string = "[";
+
+	  for (var i = 0; i<obj.length; i++){
+	  	string+=stringifyJSON.obj[i]
+	  }
+	  return string + "]";
     }
 
 	if (typeof obj === "object"){
