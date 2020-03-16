@@ -35,7 +35,8 @@ var stringifyJSON = function(obj) {
 	  var string = "[";
 
 	  for (var i = 0; i<obj.length; i++){
-	  	string+=stringifyJSON.obj[i]
+	  	var current = obj[i];
+	  	string+=stringifyJSON.current;
 	  }
 	  return string + "]";
     }
