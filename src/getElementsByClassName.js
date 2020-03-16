@@ -17,7 +17,7 @@ var getElementsByClassName = function(className
 			result.push(element);
 		};
 		getElementsByClassName(element);
-	}	
+	})	
 return result
 }
 	/*if. el === null
