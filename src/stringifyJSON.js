@@ -6,7 +6,7 @@
 var stringifyJSON = function(obj) {
   // your code goes here
  console.log(typeof obj)
-	if (typeof obj === "null") {
+	if (obj=== null) {
       return null.toString();
     }
 	if (typeof obj === "undefined") {
