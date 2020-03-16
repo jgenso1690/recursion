@@ -7,8 +7,7 @@
 var getElementsByClassName = function(className
 ) {
 	var doc = document.body;
-	var ele = element.childNodes
-	var list = element.classList
+	var ele = ParentNode.children
 	
 
 
