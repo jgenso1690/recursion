@@ -37,7 +37,7 @@ var stringifyJSON = function(obj) {
 	  for (var i = 0; i<obj.length; i++){
 	  	
 	  	if ( i !== obj.length-1 ){
-	  		string+= stringifyJSON(obj[i])+", ";
+	  		string+= stringifyJSON(obj[i])+",";
 	  	}else{
 	  		string+= stringifyJSON(obj[i]);
 	  	}
