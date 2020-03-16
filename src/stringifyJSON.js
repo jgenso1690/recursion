@@ -7,10 +7,10 @@ var stringifyJSON = function(obj) {
   // your code goes here
  console.log(typeof obj)
 	if (typeof obj === "null") {
-      return null;
+      return null.toString();
     }
 	if (typeof obj === "undefined") {
-      return null;
+      return null.toString();
     }
 	if (typeof obj === "string"){
 	  return '"'+obj+'"';
