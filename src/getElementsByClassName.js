@@ -7,7 +7,7 @@
 var getElementsByClassName = function(className
 ) {
 	
-	var ele = elementNodeReference.classList;
+	
 	var jdd = parent.classList
 	
 
