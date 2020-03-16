@@ -29,7 +29,7 @@ var stringifyJSON = function(obj) {
 	if (typeof obj === "Object"){
 		var string = []
 		Object.keys(obj).forEach(function(key) {
-			var value = stringify(obj[key])
+			var value = stringifyJSON(obj[key])
 		
 		if ( string !== null) {
 			result.push('"'+key+'":' + val)
