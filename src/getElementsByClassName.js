@@ -8,7 +8,7 @@ var getElementsByClassName = function(className
 ) {
 	var result = [] 
 	
-	if ( element.className === null){
+	if ( element.childNodes.className === null){
 		return result;
 	}
 
