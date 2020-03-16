@@ -7,8 +7,8 @@
 var getElementsByClassName = function(className
 ) {
 	result = [] 
-	var body = 
-	if (element.className === null){
+	var elementclasses = elementNodeReference.classList;
+	if ( elementclasses === null){
 		return result;
 	}
 
