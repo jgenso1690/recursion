@@ -8,12 +8,20 @@ var getElementsByClassName = function(className
 ) {
 	var result = [] 
 	
-	
-	element.childNodes.forEach(function(element){
-		if (element.className === className){
+	if ( element.childNodes.className === null){
+		return result;
+	}
+
+	var exist function(element){
+		if (element.classList && classList.includes(className)){
 			result.push(element);
 		};
-		getElementsByClassName(element);
-	})	
-return result
-}
+		
+		if ( element.hasChildNodes()){
+			element.childNodes.forEach(exist)
+		  }
+	};
+	exist(document.body);
+
+	return result;
+	}
